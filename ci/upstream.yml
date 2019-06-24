@@ -1,0 +1,7 @@
+---
+# This file contains patterns for generating links to upstream release notes,
+# for constituent releases.
+
+core:
+  - name:  bosh
+    notes: https://github.com/cloudfoundry/bosh/releases/tag/v${version}

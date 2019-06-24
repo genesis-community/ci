@@ -1,0 +1,9 @@
+---
+kit:
+  features: []
+
+params:
+  env:   ci-baseline
+  bosh:  genesis-ci
+
+  fixme: (( param "Looks like the release engineers for this kit forgot to set up CI/CD properly..." ))
