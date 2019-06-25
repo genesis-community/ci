@@ -33,11 +33,13 @@ safe rm -rf secret/ci/baseline/${KIT}
 header "Deploying BASELINE environment to verify functionality..."
 cd dev
 # make sure hooks are executable before screaming at shipit for failing.
-genesis compile-kit --name $KIT-v 9.9.9 --force
+genesis compile-kit --name $KIT -v 9.9.9 --force
 cd ..
 genesis add-secrets ci-baseline
 genesis deploy -y ci-baseline
 $BOSH -d ci-baseline-${KIT} instances --ps
-header "Validating BASELINE BOSH director admin / concourse UAA credentials..."
+
+header "Validating BASELINE environment..."
 echo >&2 "release engineers forgot the validate step!"; exit 1; # FIXME override this!
+
 cleanup ci-baseline-${KIT}
