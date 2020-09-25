@@ -2,7 +2,7 @@
 meta:
   kit:     (( param "FIXME - set this to the name of this kit" ))
   release: (( param "FIXME - set this to something like 'XYZ Genesis Kit'" ))
-  target:  genesis@pipes
+  target:  pipes@genesis
   url:     https://pipes.starkandwayne.com
 
   bosh:
