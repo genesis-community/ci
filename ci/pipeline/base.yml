@@ -74,8 +74,11 @@ groups:
     - pre
     - rc
     - shipit
-    - major
-    - minor
   - name: upstream
     jobs:
     - UPDATEME-release
+  - name: versions
+    jobs:
+    - major
+    - minor
+    - patch
