@@ -59,9 +59,3 @@ resources:
       user:         (( grab meta.github.owner ))
       repository:   (( grab meta.github.repo ))
       access_token: (( grab meta.github.access_token ))
-
-  - name: bosh-release-UPDATEME
-    type: bosh-io-release
-    check_every: 24h
-    source:
-      repository: cloudfoundry-community/UPDATEME-boshrelease

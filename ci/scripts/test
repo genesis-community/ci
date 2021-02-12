@@ -1,7 +1,5 @@
 #!/bin/bash
 set -eu
-# FIXME set $KIT to the name of this kit...
-#KIT=kit-type
 
 header() {
 	echo
