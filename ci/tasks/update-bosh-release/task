@@ -26,13 +26,11 @@ if ! grep -q "version: ${release_version}" ${OPS_FILE_PATH}; then
 
 
 cat > ${OPS_FILE_PATH} <<YML
-- type: replace
-  path: /releases?/name=${release_name}?
-  value:
-    name: ${release_name}
-    version: ${release_version}
-    url: ${url}
-    sha1: ${sha1}
+releases:
+- name: ${release_name}
+  version: ${release_version}
+  url: ${url}
+  sha1: ${sha1}
 YML
 
   echo "recreate spec-test results to validate: ${release_name}/${release_version} "
